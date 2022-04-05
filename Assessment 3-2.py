@@ -6,4 +6,4 @@ reader = csv.reader(file)
 
 for row in reader:
     if(row[8] != 'ship_country'):
-        print(row)
+        print(row[8])

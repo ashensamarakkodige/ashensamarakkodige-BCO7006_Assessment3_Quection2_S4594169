@@ -5,4 +5,5 @@ file =  open('./orders.csv', 'r')
 reader = csv.reader(file)
 
 for row in reader:
-    print(row)
+    if(row[8] != 'ship_country'):
+        print(row)
